@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #0A0E27F2;
+    --title-color: #fff;
+    --sous-title-color: #00FFFF;
+    --text-color: #B0B0B0;
+    --CS2-color : #FFA500;
+    --legent-color : #0096FF;
+    --valorant-color : #FF4655;
+    --text-btn: #0A0E27;
+    --background-Btn: linear-gradient( 135deg , #00FFFF 20% ,  #0099FF );
+    --gradient-1: linear-gradient( #0A0E27,#1A1F3A );
+    --gradient-2: linear-gradient(145deg, #1A1F3A  , #2A1F3A);
+    --gradient-3: linear-gradient(120deg,#fff,#00FFFF);
+}
+
+body{
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    background-color: #0A0E27;
+}
+
+header{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    height: 83px;
+    padding: 16px 40px 17px 40px;
+    position: absolute;
+    top: 0;
+}
+header h1{
+    font-weight: bold;
+    font-size: 27.5px;
+    width: 600px;
+    letter-spacing: -0.5px;
+    color: var(--title-color) ;
+}
+
+header h1 span{
+    width: 700px;
+    font-weight: bold;
+    font-size: 27.5px;
+    letter-spacing: -0.5px;
+    color: var(--sous-title-color);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+}
+nav ul{
+   display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+}
+
+nav ul li{
+    color: var(--text-color);
+}
+
+button{
+    background-image: var(--background-Btn);
+    color: #0A0E27;
+    padding: 12px 24px ;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px var(--sous-title-color);
+}
+
+section{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: var(--gradient-2) ;
+
+}
+.container{
+    width: 840px;
+    height: 342px;
+    padding: 0 20px;
+    margin-top: 10rem;
+    gap: 24px;
+}
+
+.container h2{
+    font-size: 79.3px;
+    font-weight: Bold;
+    line-height: 80.4px;
+    background-image: var(--gradient-3);
+    color: transparent;
+    background-clip: text;
+}
+
+.container p{
+    font-size: 18.6px;
+    line-height: 36px;
+    color: var(--text-color);
+}
+
+.content h2 , .content p , .commence{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.commence a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.savoir{
+    margin-left: 10px;
+    background:none;
+    border: 2px solid var(--sous-title-color);
+    box-shadow: none;
+}
+.savoir a{
+    color: var(--sous-title-color);
+}
