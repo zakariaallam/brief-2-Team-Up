@@ -23,7 +23,6 @@
 
 body{
     font-family: sans-serif;
-    background-color: var(--primary-color);
     background-color: #0A0E27;
     overflow-x: hidden;
 }
@@ -77,10 +76,11 @@ nav ul li a{
 button{
     background-image: var(--background-Btn);
     color: #0A0E27;
+    font-weight: bold;
+    font-size: 15.6px;
     padding: 12px 24px ;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px var(--sous-title-color);
+    border: 1px solid #000000;
+    border-radius: 8px;
 }
 
 /* ------ home page ------- */
@@ -206,6 +206,7 @@ h2{
 
 /* --------- footer -----------  */
 footer{
+    margin-top: 30rem;
     background-image: linear-gradient(to bottom,#0a0e27ce,#050812);
 }
 .social_fot{
@@ -246,19 +247,79 @@ footer{
 
 .list_joueurs{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .joueur{
+    position: relative;
     width: 365.33px;
-    height: 384.89px;
+    border: 1px solid #00ffff33;
     border-radius: 16px;
     background-image: linear-gradient(120deg,#191e38cd,#0f1429cd);
     text-align: center;
 }
 
 .joueur img{
+    margin-top: 20px;
     width: 80px;
     height:80px ;
     border: 2px var(--sous-title-color) solid;
     border-radius: 50%;
+}
+
+.Legends,.CS2,.Valorant{
+    width:max-content ;
+    padding: 0 5px;
+    height: 32px;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding-top: 5px;
+}
+.Legends{
+    background-color: #0095ff33;
+    border: 1px solid #0095ff68;
+    color:#0096FF ;
+}
+
+.CS2{
+    background-color: #ffa60033;
+    border: 1px solid #ffa60067;
+    color: #FFA500;
+}
+
+.Valorant{
+    background-color: #ff465635;
+    border: 1px solid #ff465668;
+    color: #FF4655;
+}
+.span_size{
+    font-size: 14.4px;
+    margin-left: 15px;
+}
+
+.joueur p {
+    color: var(--text-color);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.btn_joueur{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.online{
+    width: 16px;
+    height: 16px;
+    background-color: #00FF00;
+    border: 3px solid #0A0E27;
+    border-radius: 50%;
+    top: 24px;
+    left: 13rem;
+    position: absolute;
+}
+
+.of{
+    background-color: #666666;
 }
