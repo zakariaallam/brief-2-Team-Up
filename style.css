@@ -24,30 +24,30 @@
 body{
     /* font-family: sans-serif; */
     background-color: #0A0E27;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
 /* ----- header -------- */
 header{
+    height: 80px;
     background-color: var(--primary-color);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 83px;
     padding: 16px 40px 17px 40px;
-    z-index: 3;
 }
 header h1{
     font-weight: bold;
     font-size: 27.5px;
-    width: 600px;
     letter-spacing: -0.5px;
     color: var(--title-color) ;
     margin-left: 20px;
 }
 
 span{
-    width: 700px;
     font-weight: bold;
     font-size: 27.5px;
     letter-spacing: -0.5px;
@@ -57,7 +57,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
 }
 nav ul{
     display: flex;
@@ -73,6 +72,11 @@ nav ul li a{
     color: var(--text-color);
 }
 
+a{
+    text-decoration: none;
+    color: var(--primary-color); 
+}
+
 button{
     background-image: var(--background-Btn);
     color: #0A0E27;
@@ -84,14 +88,69 @@ button{
     margin-left: 20px;
 }
 
+/* --------- footer -----------  */
+footer{
+    margin-top: 10rem;
+    background-image: linear-gradient(to bottom,#0a0e27ce,#050812);
+}
+.social_fot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imformation_fot{
+    width: 254px;
+}
+
+.imformation_fot ul{
+    list-style: none;
+}
+
+.imformation_fot li , .imformation_fot p{
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.social_media{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.social_media div{
+    width: 40px;
+    height: 40px;
+    background-color: #00ffff1a;
+    border: 1px solid #00ffff4e;
+    padding: 1px 1px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.social_media i{
+    margin-top: 10px;
+    color: #00FFFF;
+}
+.addres_fot{
+    border-top: 1px solid #0095ff30;
+    height: 4rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.addres_fot p {
+    text-align: center;
+    margin-top: 20px;
+    color: #B0B0B0;
+}
+
+
 /* ------ home page ------- */
 section{
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 85vh; 
     background: var(--radial-1) ,var(--radial-2) ,var(--gradient-1);
 
 }
@@ -99,7 +158,6 @@ section{
     width: 840px;
     height: 342px;
     padding: 0 20px;
-    gap: 24px;
 }
 
 .container h2{
@@ -119,7 +177,7 @@ section{
 
  .content p , .commence{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .commence a{
@@ -127,20 +185,17 @@ section{
     text-decoration: none;
 }
 .savoir{
-    margin-left: 30px;
     background:none;
     border: 2px solid var(--sous-title-color);
     box-shadow: none;
-}
-.savoir{
     color: var(--sous-title-color);
 }
 
 /* --------- comment ca marche page -----------  */
 
 main{
-    width: 100vw;
-    height: 458.78px;
+    width: 95%;
+    flex: 1;
     margin: 0 auto;
     margin-top: 2rem;
 }
@@ -160,9 +215,11 @@ h2{
 
 .rejion{
     display: flex;
-   margin-top: 20px;
-   width: 95%;
-   margin: 0px auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin: 0px auto;
+    justify-content: center;
+    gap: 32px;
 }
 .comment-ca-marche{
     width: 365.33px;
@@ -170,7 +227,6 @@ h2{
     border: 1px var(--sous-title-color) solid;
     border-radius: 16px;
     text-align: center;
-    margin-left: 29px;
     background: linear-gradient(120deg,#1a1f3a9a,#0f14289a);
 }
 
@@ -202,45 +258,6 @@ h2{
     color: var(--text-color);
     margin-bottom: 40px;
     margin-top: 20px;
-}
-
-/* --------- footer -----------  */
-footer{
-    margin-top: 30rem;
-    background-image: linear-gradient(to bottom,#0a0e27ce,#050812);
-}
-.social_fot{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0;
-    width: 100%;
-    margin-top: 8rem;
-}
-
-.imformation_fot{
-    width: 254px;
-}
-
-.imformation_fot ul{
-    list-style: none;
-}
-
-.imformation_fot li , .imformation_fot p{
-    color: var(--text-color);
-    margin: 10px 0;
-}
-
-.addres_fot{
-    border-top: 1px solid #0095ff30;
-    height: 4rem;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.addres_fot p {
-    text-align: center;
-    margin-top: 20px;
-    color: #B0B0B0;
 }
 
 /* --------- joueurs -----------  */
@@ -329,7 +346,9 @@ footer{
 
 .list_statistiques{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 20px;
 }
 
 .satatis{
@@ -388,8 +407,6 @@ h4{
 
 .list_serch{
     padding: 40px 0;
-    width: 95%;
-    margin-left:2rem ;
     border: 1px solid #00ffff34;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -402,6 +419,8 @@ h4{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .span_recherch{
@@ -410,7 +429,7 @@ h4{
 }
 
 .serch_select select {
-    width: 250px;
+    width: 240px;
     padding: 15px 0;
     padding-left: 19px;
     padding-right: 31px;
@@ -423,8 +442,13 @@ h4{
     
 }
 
+.serch_select select{
+    background-color: var(--primary-color);
+}
 .btn-serch{
     padding: 15px 81.72px;
+    height: 50px;
+    align-self: first self-end;
 }
 
 /* --------- login ------------ */
@@ -451,6 +475,118 @@ input{
 
 .btn_login{
    width: 350px;
-   /* margin: 0 auto; */
+   margin: 0 auto;
    margin-top: 20px;
+}
+
+aside{
+    display: none;
+}
+
+.fa-bars{
+    display: none;
+}
+
+/* ----------- responsive --------- */
+
+@media(max-width : 768px){
+    body{
+        position: relative;
+    }
+    header{
+        display: none;
+    }
+    .social_fot{
+         justify-content: start;
+         margin-left: 5px;
+         gap: 20px;
+    }
+    aside , .fa-bars{
+          position: absolute;
+    }
+
+    /* ----------- menu --------- */
+    .fa-bars{
+        display: block;
+        position: fixed;
+        top: 0;
+        font-size: 40px;
+        color: white;
+        width: fit-content;
+         cursor: pointer;
+        z-index: 10;
+    }
+
+    aside{
+        position: fixed;
+        top: 36px;
+        width: 150px;
+        background-color: var(--primary-color);
+        z-index: 10;
+        text-align: center;
+        color: white;
+        border-radius: 4px;
+        border: 1px solid #00ffff34;
+        padding-top: 10px;
+    }
+
+    .fa-bars:hover + aside{
+        display: block;
+    }
+    aside:hover{
+        display: block;
+    }
+    aside ul li {
+        margin-bottom: 20px;
+    }
+     aside ul li a{
+        color: #00FFFF;
+     }
+
+     h2{
+        font-size: 33px;
+        margin-top: 50px;
+     }
+
+ /* ---------- homme --------- */
+    section{
+       height: 100vh; 
+    }
+    .container{
+        height: 80%;
+    }
+
+    .container h2{
+        font-size: 60px;
+    }   
+
+    .container p{
+       font-size: 15.6px;
+    }
+
+    .commence{
+        margin-top: 30px;
+    }
+
+
+     /* --------- recherch --------- */
+     .serche{
+       flex-direction: column;
+       align-items: center;
+     }
+
+     .btn-serch{
+        align-self: center;
+     }
+    
+     .serch_select select{
+        margin-top: 0px;
+        margin-bottom: 20px;
+     }
+
+     .list_serch{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 90%;
+     }
 }
