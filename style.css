@@ -37,7 +37,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 40px 17px 40px;
+    padding: 16px 20px 17px 40px;
 }
 header h1{
     font-weight: bold;
@@ -72,20 +72,30 @@ nav ul li a{
     color: var(--text-color);
 }
 
+nav button{
+    height: 44px;
+    margin-left: 8px;
+}
+
 a{
     text-decoration: none;
     color: var(--primary-color); 
+    font-size: 18px;
 }
 
 button{
     background-image: var(--background-Btn);
     color: #0A0E27;
     font-weight: bold;
-    font-size: 15.6px;
-    padding: 12px 24px ;
+    font-size: 14.6px;
+    padding: 12px 30px ;
     border: 1px solid #000000;
     border-radius: 8px;
-    margin-left: 20px;
+    cursor: pointer;
+}
+
+button a{
+    padding: 8px 10px;
 }
 
 /* --------- footer -----------  */
@@ -183,6 +193,11 @@ section{
 .commence a{
     color: var(--primary-color);
     text-decoration: none;
+}
+
+.commence button{
+    margin-right: 20px;
+    padding: 16px 40px;
 }
 .savoir{
     background:none;
@@ -423,7 +438,8 @@ h4{
     flex-wrap: wrap;
 }
 
-.span_recherch{
+.label_recherch{
+    color: #00FFFF;
     margin-left:30px ;
     font-size: 14.4px;
 }
@@ -479,16 +495,144 @@ input{
    margin-top: 20px;
 }
 
+/* ----------- information joueur -------------- */
+.imformation_joueur{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    border: 1px solid #00ffff4e ;
+    border-radius: 8px;
+    position: fixed;
+    color: white;
+    top: 0;
+    left: -10px;
+    z-index: 4;
+    cursor: pointer;
+}
+.bg_valorant{
+       background-image: url(valorant.jpg);
+}
+.bg_legend{
+       background-image: url(legend.jpg);
+}
+.bg_cs2{
+       background-image: url(testy-counter-strike-2.jpg);
+}
+.bg_img{
+     background-color: #000000a7 ;
+     height: 100%;
+}
+
+.fa-xmark{
+    position: absolute;
+    transform: translate(550px,30px);
+    color: #000000c7;
+    font-size: 50px;
+    top: 0;
+    z-index: 100 ;
+}
+.imformation_joueur img{
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+.imformation_joueur h2{
+    margin: 10px 0;
+}
+.btn_afichage:active + .imformation_joueur{
+      color: red;
+      display: block;
+}
+.imformation_joueur:hover{
+    display: block;
+    /* transform: scale(1.2); */
+}
+
+.imformation_joueur table{
+    background-color: #000000a7 ;
+    margin: 0 auto;
+    border-radius: 20px ;
+    width: 90%;
+    line-height: 2rem;
+}
+.imformation_joueur table th{
+    color: #00FFFF;
+}
+
+.imformation_joueur table td{
+    color: var(--text-color);
+}
+
+.imformation_joueur table td img{
+    margin: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: none;
+    background-color: none;
+}
+
+/* ------------ Annonce ------------- */
+
+.list_annonce{
+    width: 70%;
+    background: url(game3.jpg) ;
+    background-size: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid #00ffff4e;
+    margin: 20px auto;
+}
+
+.annonce_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    text-align: start;
+}
+.annonce_row input{
+    width: 95%;
+    background-color: white;
+}
+.annonce_colomn input{
+    width: 100%;
+    background-color: white;
+}
+.lable_anonce{
+    line-height: 44px;
+    color: #00FF00;
+}
+.annonce_colomn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 52%;
+}
+
+.annonce_Message{
+    padding-bottom: 40px;
+}
+
+.annonce_btn{
+    width: 40%;
+    margin: 20px auto;
+    
+}
+
+/* ----------- responsive --------- */
+
 aside{
     display: none;
 }
 
 .fa-bars{
-    display: none;
+    display: none !important;
 }
-
-/* ----------- responsive --------- */
-
 @media(max-width : 768px){
     body{
         position: relative;
@@ -507,7 +651,7 @@ aside{
 
     /* ----------- menu --------- */
     .fa-bars{
-        display: block;
+        display: block !important;
         position: fixed;
         top: 0;
         font-size: 40px;

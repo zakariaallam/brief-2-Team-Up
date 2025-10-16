@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta name="description" content="E-sport dans ce brief il s'agit de concevoir et d'intégrer le frontend d'une application Web appelée TeamUp.gg, qui aide les joueurs à trouver des coéquipiers et des équipes pour jouer à des jeux en ligne compétitifs comme Valorant, League of Legends ou CS2.">
     <meta name="keyworld" content="E-sport , gaming , joueurs , Communauté">
     <meta name="author" content="Zakaria Allam">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" as="icon" />
     <title>E-sport</title>
 </head>
 <body>
@@ -21,6 +21,7 @@
                 <li><a href="joueurs.html">Joueurs</a></li>
                 <li><a href="communaite.html">Communauté</a></li>
                 <li><a href="recherch.html">Recherch</a></li>
+                <li><a href="annonce.html">annonce</a></li>
             </ul>
     </aside>
 
@@ -33,6 +34,7 @@
                 <li><a href="joueurs.html">Joueurs</a></li>
                 <li><a href="communaite.html">Communauté</a></li>
                 <li><a href="#">Recherch</a></li>
+                <li><a href="annonce.html">Annonce</a></li>
             </ul>
             <button><a href="login.html">Connection</a></button>
        </nav>
@@ -41,42 +43,42 @@
    <main>
 
        <div class="list_serch">
-            <h3>Recherche ton équipe idéale</h3>
+            <h2>Recherche ton équipe idéale</h2>
        
         <div class="serche">
             <div class="serch_select">
-                <span class="span_recherch">Jeu</span><br>
-                <select name="Jeu" id="Jeu">
-                    <option value="option1">Sélectionne un jeu</option>
-                    <option value="option2">Valorant</option>
-                    <option value="option3">League of Legends</option>
-                    <option value="option4">CS2</option>
+                <label class="label_recherch" for="jeu_select">Jeu</label><br>
+                <select name="jeu_select" id="jeu_select">
+                    <option value="Jeu">Sélectionne un Jeu</option>
+                    <option value="Valorant">Valorant</option>
+                    <option value="Legends">League of Legends</option>
+                    <option value="CS2">CS2</option>
                 </select>
             </div>
 
             <div class="serch_select">
-                <span class="span_recherch">Niveau</span><br>
-                <select name="Niveau" id="Niveau">
-                    <option value="option1">Tous les niveaux</option>
-                    <option value="option2">Diamant II</option>
-                    <option value="option3">Maître</option>
-                    <option value="option4">Global Elite</option>
-                    <option value="option5">Platine III</option>
-                    <option value="option6">Diamant I</option>
-                    <option value="option7">Supreme</option>
+                <label class="label_recherch" for="Niveau_select">Niveau</label><br>
+                <select name="Niveau_select" id="Niveau_select">
+                    <option value="niveaux">Tous les niveaux</option>
+                    <option value="Diamant2">Diamant II</option>
+                    <option value="Maître">Maître</option>
+                    <option value="Global">Global Elite</option>
+                    <option value="Platine">Platine III</option>
+                    <option value="Diamant">Diamant I</option>
+                    <option value="Supreme">Supreme</option>
                 </select>
             </div>
 
             <div class="serch_select d">
-                    <span class="span_recherch">Rôle</span><br>
-                    <select name="Rôle" id="Rôle">
-                        <option value="option1">Sélectionne un jeu</option>
-                        <option value="option2">Controller</option>
-                        <option value="option3">Mid Lane</option>
-                        <option value="option4">AWPer</option>
-                        <option value="option5">Contrôleur</option>
-                        <option value="option6">Jungle</option>
-                        <option value="option7">Entry Fragger</option>
+                    <label class="label_recherch" for="Rôle_select">Rôle</label><br>
+                    <select name="Rôle_select" id="Rôle_select">
+                        <option value="Rôle">Sélectionne un Rôle</option>
+                        <option value="Controller">Controller</option>
+                        <option value="Mid">Mid Lane</option>
+                        <option value="AWPer">AWPer</option>
+                        <option value="Contrôleur">Contrôleur</option>
+                        <option value="Jungle">Jungle</option>
+                        <option value="Fragger">Entry Fragger</option>
                 </select>
             </div>
 
