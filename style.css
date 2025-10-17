@@ -375,6 +375,10 @@ h2{
     flex-direction: column;
 }
 
+.satatis h3{
+    font-size: 17px;
+    color: #888888;
+}
 .satatis div{
     font-size: 40.7px;
     font-weight: bold;
@@ -406,7 +410,7 @@ h4{
     line-height: 28.8px;
     margin-top: 30px;
 }
-.cummunaite h6{
+.cummunaite small{
     color: #888888;
     margin: 10px 0;
     margin-left: 30px;
@@ -511,17 +515,18 @@ input{
     cursor: pointer;
 }
 .bg_valorant{
-       background-image: url(valorant.jpg);
+       background-image: url(profile/valorant.jpg);
 }
 .bg_legend{
-       background-image: url(legend.jpg);
+       background-image: url(profile/legend.jpg);
 }
 .bg_cs2{
-       background-image: url(testy-counter-strike-2.jpg);
+       background-image: url(profile/cs2.jpg);
 }
 .bg_img{
      background-color: #000000a7 ;
      height: 100%;
+     z-index: 20;
 }
 
 .fa-xmark{
@@ -530,7 +535,7 @@ input{
     color: #000000c7;
     font-size: 50px;
     top: 0;
-    z-index: 100 ;
+    z-index: 10 ;
 }
 .imformation_joueur img{
     margin-top: 40px;
@@ -596,11 +601,9 @@ input{
 }
 .annonce_row input{
     width: 95%;
-    background-color: white;
 }
 .annonce_colomn input{
     width: 100%;
-    background-color: white;
 }
 .lable_anonce{
     line-height: 44px;
@@ -663,7 +666,7 @@ aside{
 
     aside{
         position: fixed;
-        top: 36px;
+        top: 10px;
         width: 150px;
         background-color: var(--primary-color);
         z-index: 10;
@@ -674,7 +677,7 @@ aside{
         padding-top: 10px;
     }
 
-    .fa-bars:hover + aside{
+    .fa-bars:active + aside{
         display: block;
     }
     aside:hover{
@@ -701,7 +704,7 @@ aside{
     }
 
     .container h2{
-        font-size: 60px;
+        font-size: 55px;
     }   
 
     .container p{
@@ -712,6 +715,9 @@ aside{
         margin-top: 30px;
     }
 
+    .savoir{
+        margin-top: 20px;
+    }
 
      /* --------- recherch --------- */
      .serche{
@@ -732,5 +738,16 @@ aside{
         margin: 0 auto;
         margin-top: 50px;
         width: 90%;
+     }
+
+     /* ------------- Annonce ------------ */
+     .annonce_colomn{
+        width: 65%;
+     }
+     .annonce_btn{
+        width: 60%;
+     }
+     .lable_anonce{
+        margin: 0;
      }
 }
