@@ -6,7 +6,7 @@
     <meta name="keyworld" content="E-sport , gaming , joueurs , Communauté">
     <meta name="author" content="Zakaria Allam">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preload" href="styles.css">
+    <link rel="preload" href="styles.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" as="icon"/>
     <title>E-sport</title>
@@ -16,10 +16,7 @@
     <aside>
          <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="commen_ ca_marche.html">Comment ca marche</a></li>
                 <li><a href="joueurs.html">Joueurs</a></li>
-                <li><a href="communaite.html">Communauté</a></li>
-                <li><a href="recherch.html">Recherch</a></li>
                 <li><a href="annonce.html">annonce</a></li>
             </ul>
     </aside>
@@ -27,11 +24,8 @@
         <h1> TeamUp <span>.gg</span></h1>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="commen_ ca_marche.html">Comment ca marche</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="joueurs.html">Joueurs</a></li>
-                <li><a href="communaite.html">Communauté</a></li>
-                <li><a href="recherch.html">Recherch</a></li>
                 <li><a href="annonce.html">Annonce</a></li>
             </ul>
             <button><a href="login.html">Connection</a></button>
@@ -40,22 +34,288 @@
 
     <section>
         <div class="container">
-       <div class="content">
-            <h2>
-                Trouve ton équipe.
-                Domine le jeu.
-            </h2>
-            <p>
-                Rejoins la plus grande communauté E-sport et connecte-toi avec des joueurs de ton
-                niveau sur Valorant, LoL, CS2 et plus encore.
-            </p>
-       </div>
-        <div class="commence">
-            <button><a href="login.html">Commencer maintenant</a></button>
-            <button class="savoir">En savoir plus</button>
-        </div>
+            <main >
+              <div class="page_home">
+                <div class="content">
+                  <h2>
+                   Trouve ton équipe.
+                   Domine le jeu.
+                  </h2>
+                  <p>
+                    Rejoins la plus grande communauté E-sport et connecte-toi avec des joueurs de ton
+                    niveau sur Valorant, LoL, CS2 et plus encore.
+                  </p>
+                
+                 <div class="commence">
+                    <button><a href="login.html">Commencer maintenant</a></button>
+                   <button class="savoir">En savoir plus</button>
+                 </div>
+                </div>
+              </div>
+            
+            </main>
+
+            <main>
+
+              <div class="comment_ca_march">
+              <h2>Comment ça marche ?</h2>
+              <div class="line"></div>
+             <div class="rejion">
+             <div class="comment-ca-marche">
+                <div>
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h3>
+                    Trouve une équipe
+                </h3>
+                <p>
+                    Parcours des centaines de profils de
+                    joueurs et d'équipes qui cherchent des
+                    coéquipiers de ton niveau.
+                </p>
+             </div>
+
+             <div class="comment-ca-marche">
+                <div>
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <h3>
+                    Publie ton profil
+                </h3>
+                <p>
+                    Crée ton profil de joueur avec tes stats,
+                    tes jeux favoris et ton niveau pour être
+                    visible par les équipes.
+                </p>
+             </div>
+
+             <div class="comment-ca-marche">
+                <div>
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h3>
+                    Rejoins la communauté
+                </h3>
+                <p>
+                    Connecte-toi avec des milliers de
+                    joueurs passionnés et participe à des
+                    tournois communautaires.
+                </p>
+             </div>
+             </div>
+              </div>
+            </main>
+
+             <main>
+       
+             <div class="page_recherch">
+             <div class="list_serch">
+              <h2>Recherche ton équipe idéale</h2>
+        
+              <div class="serche">
+              <div class="serch_select">
+                <label class="label_recherch" for="jeu_select">Jeu</label><br>
+                <select name="jeu_select" id="jeu_select">
+                    <option value="Jeu">Sélectionne un Jeu</option>
+                    <option value="Valorant">Valorant</option>
+                    <option value="Legends">League of Legends</option>
+                    <option value="CS2">CS2</option>
+                </select>
+             </div>
+
+             <div class="serch_select">
+                <label class="label_recherch" for="Niveau_select">Niveau</label><br>
+                <select name="Niveau_select" id="Niveau_select">
+                    <option value="niveaux">Tous les niveaux</option>
+                    <option value="Diamant2">Diamant II</option>
+                    <option value="Maître">Maître</option>
+                    <option value="Global">Global Elite</option>
+                    <option value="Platine">Platine III</option>
+                    <option value="Diamant">Diamant I</option>
+                    <option value="Supreme">Supreme</option>
+                </select>
+             </div>
+
+             <div class="serch_select d">
+                    <label class="label_recherch" for="Rôle_select">Rôle</label><br>
+                    <select name="Rôle_select" id="Rôle_select">
+                        <option value="Rôle">Sélectionne un Rôle</option>
+                        <option value="Controller">Controller</option>
+                        <option value="Mid">Mid Lane</option>
+                        <option value="AWPer">AWPer</option>
+                        <option value="Contrôleur">Contrôleur</option>
+                        <option value="Jungle">Jungle</option>
+                        <option value="Fragger">Entry Fragger</option>
+                </select>
+             </div>
+
+             <button class="btn-serch">Serche</button>
+
+             </div>
+             </div>  
+
+              </div>
+            </main>
+
+            <main>
+
+             <div class="page commuaite">
+             <h2>Une communauté en pleine croissance</h2>
+             <div class="line"></div>
+             <div class="list_statistiques">
+             <div class=" joueur satatis">
+                <div>
+                    15,000+
+                </div>
+                <h3>
+                    Trouve une équipe
+                </h3>
+             </div>
+
+             <div class="joueur satatis">
+                <div>
+                    2,500+
+                </div>
+                <h3>
+                    Trouve une équipe
+                </h3>
+             </div>
+
+             <div class="joueur satatis">
+                <div>
+                    50+
+                </div>
+                <h3>
+                    Publie ton profil
+                </h3>
+             </div>
+
+             <div class="joueur satatis">
+                <div>
+                    10+
+                </div>
+                <h3>
+                    Rejoins la communauté
+                </h3>
+             </div>
+             </div>
+
+              <h3 class="h3_cummunaite">Ce qu'ils disent de nous</h3>
+
+              <div class="list_statistiques">
+             <div class=" joueur satatis cummunaite">
+                <p>
+                     "J'ai trouvé mon équipe en moins de 24h !
+                    L'interface est super intuitive et la
+                    communauté est vraiment active."
+                </p>
+                <span class="span_communt">ProGamer92</span>
+                <small>
+                    trouvé mon équipe 
+                </small>
+             </div>
+
+             <div class="joueur satatis cummunaite">
+                <p>
+                    "TeamUp.gg a complètement changé ma
+                    façon de jouer. Fini les randoms toxiques,
+                    maintenant je joue avec une vraie équipes !"
+                </p>
+                <span class="span_communt">LunaGaming</span>
+                <small>
+                    trouvé mon équipe 
+                </small>
+             </div>
+
+             <div class="joueur satatis cummunaite">
+                <p>
+                    "La meilleure plateforme pour trouver des
+                    coéquipiers sérieux. On a même participé
+                    à notre premier tournoi ensemble !"
+                    
+                </p>
+                <span class="span_communt">DragonSlayer</span>
+                <small>
+                    Publie ton profil
+                </small>
+             </div>
+             </div>
+              </div>
+              </div>
+            </main>
         </div>
    </section>
+
+    <footer>
+            <div class="social_fot">
+                <div class="imformation_fot">
+                     <h3>
+                        TeamUp<span>.gg</span>
+                     </h3>
+                     <p>
+                        La plateforme E-sport qui connecte
+                        les joueurs et les équipes du
+                        monde entier.
+                     </p>
+                     <div class="social_media">
+                          <div>
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-twitch"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="imformation_fot">
+                     <h3>
+                        Plateforme
+                     </h3>
+                     <ul>
+                        <li>Trouver une équipe</li>
+                        <li>Créer un profil</li>
+                        <li>Tournois</li>
+                        <li>Classements</li>
+                     </ul>
+                </div>
+
+                <div class="imformation_fot">
+                     <h3>
+                        Jeux
+                     </h3>
+                     <ul>
+                        <li>Valorant</li>
+                        <li>League of Legends</li>
+                        <li>Counter-Strike 2</li>
+                        <li>Overwatch 2</li>
+                     </ul>
+                </div>
+
+                <div class="imformation_fot">
+                     <h3>
+                        Support
+                     </h3>
+                     <ul>
+                        <li>Centre d'aide</li>
+                        <li>Conditions d'utilisation</li>
+                        <li>Politique de confidentialité</li>
+                        <li>Contact</li>
+                     </ul>
+                </div>
+
+            </div>
+             <div class="addres_fot">
+                    <p>© 2025 TeamUp.gg. Tous droits réservés. Tayeb SOUINI, Formateur Référent Youcoude Youssoufia</p>
+                </div>
+        </div>
+   </footer>
+
 
 </body>
 </html>
